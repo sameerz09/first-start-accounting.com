@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-              <record id="action_crm_lead_form_custom" model="ir.actions.act_window">
-                <field name="name">Open Custom CRM Lead Form</field>
-                <field name="type">ir.actions.act_window</field>
-                <field name="res_model">crm.lead</field>
-                <field name="view_mode">form</field>
-                <field name="view_id" ref="crm_lead_view_form_custom"/>
-                <!-- Add context to pre-set the 'grantmaking' field to True -->
-                <field name="context">{'default_grantmaking': True}</field>
-        </record>
+<!--          <record id="action_crm_lead_form_custom" model="ir.actions.act_window">-->
+<!--                <field name="name">Open Custom CRM Lead Form</field>-->
+<!--                <field name="type">ir.actions.act_window</field>-->
+<!--                <field name="res_model">crm.lead</field>-->
+<!--                <field name="view_mode">form</field>-->
+<!--                <field name="view_id" ref="crm_lead_view_form_custom"/>-->
+<!--                &lt;!&ndash; Add context to pre-set the 'grantmaking' field to True &ndash;&gt;-->
+<!--                <field name="context">{'default_grantmaking': True}</field>-->
+<!--        </record>-->
 
-        <record id="action_crm_lead_list_view" model="ir.actions.act_window">
-                <field name="name">CRM Leads List</field>
-                <field name="type">ir.actions.act_window</field>
-                <field name="res_model">crm.lead</field>
-                <field name="view_mode">tree,form</field>
-                <field name="domain">[('grantmaking', '=', True)]</field>
-        </record>
+<!--        <record id="action_crm_lead_list_view" model="ir.actions.act_window">-->
+<!--                <field name="name">CRM Leads List</field>-->
+<!--                <field name="type">ir.actions.act_window</field>-->
+<!--                <field name="res_model">crm.lead</field>-->
+<!--                <field name="view_mode">tree,form</field>-->
+<!--                <field name="domain">[('grantmaking', '=', True)]</field>-->
+<!--        </record>-->
 
-        <record id="action_crm_lead_kanban_view" model="ir.actions.act_window">
-            <field name="name">CRM Leads Kanban</field>
-            <field name="type">ir.actions.act_window</field>
-            <field name="res_model">crm.lead</field>
-            <field name="view_mode">kanban,form</field>
-            <field name="domain">[('grantmaking', '=', True)]</field>
-        </record>
+<!--        <record id="action_crm_lead_kanban_view" model="ir.actions.act_window">-->
+<!--            <field name="name">CRM Leads Kanban</field>-->
+<!--            <field name="type">ir.actions.act_window</field>-->
+<!--            <field name="res_model">crm.lead</field>-->
+<!--            <field name="view_mode">kanban,form</field>-->
+<!--            <field name="domain">[('grantmaking', '=', True)]</field>-->
+<!--        </record>-->
 
         <record id="crm_lead_view_form_inherit" model="ir.ui.view">
         <field name="name">crm.lead.form.inherit</field>
@@ -68,10 +68,10 @@
                 </xpath>
             </field>
         </record>
-        <record id="crm_lead_view_form_custom" model="ir.ui.view">
-    <field name="name">crm.lead.form.custom</field>
-    <field name="model">crm.lead</field>
-    <field name="arch" type="xml">
+    <record id="crm_lead_view_form_custom" model="ir.ui.view">
+        <field name="name">crm.lead.form.custom</field>
+        <field name="model">crm.lead</field>
+        <field name="arch" type="xml">
         <form class="o_lead_opportunity_form" js_class="crm_form">
 <!--                    <header>-->
 <!--                        <button name="action_set_won_rainbowman" string="Won"-->

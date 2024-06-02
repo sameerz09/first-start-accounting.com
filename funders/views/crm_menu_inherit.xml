@@ -394,7 +394,7 @@
 <!--             <menuitem id="crm.crm_menu_root"-->
 <!--              active="False"/>-->
         <menuitem id="crm.crm_menu_root" name="Funders" sequence="1"/>
-        <menuitem id="crm.crm_menu_root2" name="Grantmaking" action="action_crm_lead_form_custom" sequence="2"/>
+<!--        <menuitem id="crm.crm_menu_root2" name="Grantmaking" action="action_crm_lead_form_custom" sequence="2"/>-->
         <menuitem
         id="crm_menu_sales2"
         name="Sales"

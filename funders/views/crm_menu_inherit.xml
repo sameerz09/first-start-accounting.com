@@ -11,7 +11,9 @@
         <field name="inherit_id" ref="crm.crm_lead_view_form"/>
         <field name="arch" type="xml">
             <header>
+                            <button name="%(action_crm_lead_list_view2)d" type="action" string="List View" class="oe_highlight" />
                             <!-- Button to switch to Kanban View -->
+                            <button name="%(action_crm_lead_kanban_view2)d" type="action" string="Kanban View" class="oe_highlight" />
 
 
             </header>

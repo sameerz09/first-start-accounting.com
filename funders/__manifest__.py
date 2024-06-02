@@ -15,7 +15,7 @@
     ],
     'assets': {
             'web.assets_backend': [
-                'funders/static/src/js/tree_button.js',
+                # 'funders/static/src/js/tree_button.js',
             ],
         },
 

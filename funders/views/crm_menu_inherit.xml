@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-<!--          <record id="action_crm_lead_form_custom" model="ir.actions.act_window">-->
-<!--                <field name="name">Open Custom CRM Lead Form</field>-->
-<!--                <field name="type">ir.actions.act_window</field>-->
-<!--                <field name="res_model">crm.lead</field>-->
-<!--                <field name="view_mode">form</field>-->
-<!--                <field name="view_id" ref="crm_lead_view_form_custom"/>-->
-<!--                &lt;!&ndash; Add context to pre-set the 'grantmaking' field to True &ndash;&gt;-->
-<!--                <field name="context">{'default_grantmaking': True}</field>-->
-<!--        </record>-->
 
-<!--        <record id="action_crm_lead_list_view" model="ir.actions.act_window">-->
-<!--                <field name="name">CRM Leads List</field>-->
-<!--                <field name="type">ir.actions.act_window</field>-->
-<!--                <field name="res_model">crm.lead</field>-->
-<!--                <field name="view_mode">tree,form</field>-->
-<!--                <field name="domain">[('grantmaking', '=', True)]</field>-->
-<!--        </record>-->
-
-<!--        <record id="action_crm_lead_kanban_view" model="ir.actions.act_window">-->
-<!--            <field name="name">CRM Leads Kanban</field>-->
-<!--            <field name="type">ir.actions.act_window</field>-->
-<!--            <field name="res_model">crm.lead</field>-->
-<!--            <field name="view_mode">kanban,form</field>-->
-<!--            <field name="domain">[('grantmaking', '=', True)]</field>-->
-<!--        </record>-->
 
         <record id="crm_lead_view_form_inherit" model="ir.ui.view">
         <field name="name">crm.lead.form.inherit</field>
@@ -43,31 +19,8 @@
         </field>
     </record>
 
-<!--         <record id="view_crm_lead_kanban_custom" model="ir.ui.view">-->
-<!--            <field name="name">crm.lead.kanban.custom</field>-->
-<!--            <field name="model">crm.lead</field>-->
-<!--            <field name="inherit_id" ref="crm.crm_case_kanban_view_leads"/>-->
-<!--            <field name="arch" type="xml">-->
-<!--                <xpath expr="//kanban[@class='o_kanban_view']/templates" position="inside">-->
-<!--                    <button name="action_generate_future_leads" string="Future" type="object" class="oe_highlight"-->
-<!--                     attrs="{'always_visible': True}"/>-->
-<!--                    />-->
 
-<!--                </xpath>-->
-<!--            </field>-->
-<!--        </record>-->
 
-        <record id="view_crm_lead_tree_custom" model="ir.ui.view">
-            <field name="name">crm.lead.tree.custom</field>
-            <field name="model">crm.lead</field>
-            <field name="inherit_id" ref="crm.crm_case_tree_view_oppor"/>
-            <field name="arch" type="xml">
-                <xpath expr="//header" position="inside">
-                    <button name="action_generate_future_leads" string="Future" type="object" class="oe_highlight"
-                    />
-                </xpath>
-            </field>
-        </record>
     <record id="crm_lead_view_form_custom" model="ir.ui.view">
         <field name="name">crm.lead.form.custom</field>
         <field name="model">crm.lead</field>

@@ -12,7 +12,6 @@
         <field name="arch" type="xml">
             <header>
                             <!-- Button to switch to Kanban View -->
-                            <button name="%(action_crm_lead_kanban_view2)d" type="action" string="Kanban View" class="oe_highlight" />
 
 
             </header>

@@ -1,0 +1,43 @@
+<odoo>
+    <record model="ir.ui.view" id="update_crm_tag_form_view">
+        <field name="name">update.crm.tag.form.view</field>
+        <field name="model">update.crm.tag</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="update_type" widget="radio"/>
+                        <field name="tag_ids" widget="many2many_tags"/>
+                        <field name="crm_lead_ids" colspan="2" nolabel="1">
+                            <tree>
+                                <field name="create_date"/>
+                                <field name="name"/>
+                                <field name="contact_name"/>
+                                <field name="city"/>
+                                <field name="country_id"/>
+                                <field name="email_from"/>
+                                <field name="phone"/>
+                                <field name="team_id"/>
+                            </tree>
+                        </field>
+                    </group>
+                         <footer>
+                            <button name="update_tags" type="object" string="Save" class="oe_highlight"/>
+                            <button string="Cancel" class="btn-default" special="cancel"/>
+                        </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_update_crm_tag" model="ir.actions.act_window">
+        <field name="name">Update CRM Tag</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">update.crm.tag</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem name="Update CRM Tag" id="menu_update_crm_tag" action="action_update_crm_tag"
+              parent="crm.crm_menu_sales" sequence="6"/>
+</odoo>

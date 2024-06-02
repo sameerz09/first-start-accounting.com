@@ -108,9 +108,9 @@
                             options="{'clickable': '1', 'fold_field': 'fold'}"/>
 
                             <!-- Button to switch to List View -->
-                            <button name="%(action_crm_lead_list_view)d" type="action" string="List View" class="oe_highlight" />
-                            <!-- Button to switch to Kanban View -->
-                            <button name="%(action_crm_lead_kanban_view)d" type="action" string="Kanban View" class="oe_highlight" />
+<!--                            <button name="%(action_crm_lead_list_view)d" type="action" string="List View" class="oe_highlight" />-->
+<!--                            &lt;!&ndash; Button to switch to Kanban View &ndash;&gt;-->
+<!--                            <button name="%(action_crm_lead_kanban_view)d" type="action" string="Kanban View" class="oe_highlight" />-->
                     </header>
 
                     <sheet>

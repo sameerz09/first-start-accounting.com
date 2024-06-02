@@ -397,7 +397,7 @@
                 <field name="type">ir.actions.act_window</field>
                 <field name="res_model">crm.lead</field>
                 <field name="view_mode">form</field>
-                <field name="view_id" ref="crm_lead_view_form_custom"/>
+                <field name="view_id" ref="crm_lead_view_form_inherit"/>
                 <!-- Add context to pre-set the 'grantmaking' field to True -->
                 <field name="context">{'default_grantmaking': False}</field>
         </record>

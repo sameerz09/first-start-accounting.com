@@ -387,5 +387,172 @@
 
 
 
+
+
+
+
+<!--             <menuitem id="crm.crm_menu_root"-->
+<!--              active="False"/>-->
+        <menuitem id="crm.crm_menu_root" name="Funders" sequence="1"/>
+<!--        <menuitem id="crm.crm_menu_root2" name="Grantmaking" action="action_crm_lead_form_custom" sequence="2"/>-->
+        <menuitem
+        id="crm_menu_sales2"
+        name="Sales"
+        parent="crm.crm_menu_root2"
+        sequence="1"/>
+    <menuitem
+        id="menu_crm_opportunities2"
+        name="My Pipeline"
+        parent="crm_menu_sales2"
+        action="crm.action_your_pipeline"
+        sequence="1"/>
+    <menuitem
+        id="crm_lead_menu_my_activities2"
+        name="My Activities"
+        parent="crm_menu_sales2"
+        groups="sales_team.group_sale_salesman"
+        action="crm.crm_lead_action_my_activities"
+        sequence="2"/>
+
+    <menuitem
+        id="sales_team_menu_team_pipeline2"
+        name="Teams"
+        parent="crm_menu_sales2"
+        action="sales_team.crm_team_action_pipeline"
+        groups="sales_team.group_sale_manager"
+        sequence="4"/>
+    <menuitem
+        id="res_partner_menu_customer2"
+        name="Customers"
+        parent="crm_menu_sales2"
+        action="base.action_partner_form"
+        sequence="5"/>
+
+    <!-- LEADS (MAIN USER MENU) -->
+    <menuitem
+        id="crm_menu_leads2"
+        name="Leads"
+        parent="crm.crm_menu_root2"
+        action="crm.crm_lead_all_leads"
+        groups="crm.group_use_lead"
+        sequence="5"/>
+
+    <!-- REPORTING -->
+    <menuitem
+        id="crm_menu_report2"
+        name="Reporting"
+        parent="crm.crm_menu_root2"
+        sequence="20"
+        groups="sales_team.group_sale_salesman"/>
+    <menuitem
+        id="crm_menu_forecast2"
+        name="Forecast"
+        parent="crm_menu_report2"
+        action="crm.action_opportunity_forecast"
+        sequence="1"/>
+    <menuitem
+        id="crm_opportunity_report_menu2"
+        name="Pipeline"
+        parent="crm_menu_report2"
+        action="crm.crm_opportunity_report_action"
+        sequence="2"/>
+    <menuitem
+        id="crm_opportunity_report_menu_lead2"
+        name="Leads"
+        parent="crm_menu_report2"
+        action="crm.crm_opportunity_report_action_lead"
+        sequence="3"/>
+<!--    <menuitem-->
+<!--        id="crm_activity_report_menu2"-->
+<!--        name="Activities"-->
+<!--        parent="crm_menu_report2"-->
+<!--        action="crm_activity_report_action"-->
+<!--        sequence="4"/>-->
+
+    <!-- CONFIGURATION -->
+    <menuitem
+        id="crm_menu_config2"
+        name="Configuration"
+        parent="crm.crm_menu_root2"
+        action="crm.action_your_pipeline"
+        sequence="25" groups="sales_team.group_sale_manager"/>
+    <menuitem
+        id="crm_config_settings_menu2"
+        name="Settings"
+        parent="crm_menu_config2"
+        action="crm.crm_config_settings_action"
+        groups="base.group_system"
+        sequence="0"/>
+    <menuitem
+        id="menu_crm_config_opportunity2"
+        name="Opportunities"
+        parent="crm_menu_config2"
+        sequence="1"
+        groups="sales_team.group_sale_manager"/>
+    <menuitem
+        id="crm_team_config2"
+        name="Sales Teams"
+        parent="crm_menu_config2"
+        action="sales_team.crm_team_action_config"
+        sequence="5"/>
+    <menuitem
+        id="crm_team_member_config2"
+        name="Teams Members"
+        parent="crm_menu_config2"
+        action="sales_team.crm_team_member_action"
+        sequence="6"
+        groups="base.group_no_one"/>
+    <menuitem
+        id="crm_team_menu_config_activity_types2"
+        name="Activity Types"
+        parent="crm_menu_config2"
+        action="sales_team.mail_activity_type_action_config_sales"
+        sequence="10"/>
+<!--    <menuitem-->
+<!--        id="mail_activity_plan_menu_config_lead2"-->
+<!--        name="Activity Plans"-->
+<!--        parent="crm_menu_config2"-->
+<!--        action="mail_activity_plan_action_lead"-->
+<!--        groups="sales_team.group_sale_manager"-->
+<!--        sequence="11"-->
+<!--    />-->
+    <menuitem
+        id="crm_recurring_plan_menu_config2"
+        name="Recurring Plans"
+        parent="crm_menu_config2"
+        action="crm.crm_recurring_plan_action"
+        sequence="12"
+        groups="crm.group_use_recurring_revenues"/>
+    <menuitem
+        id="menu_crm_config_lead2"
+        name="Pipeline"
+        parent="crm_menu_config2"
+        sequence="15"
+        groups="sales_team.group_sale_manager"/>
+    <menuitem
+        id="menu_crm_lead_stage_act2"
+        name="Stages"
+        sequence="0"
+        parent="menu_crm_config_lead2"
+        action="crm.crm_stage_action"
+        groups="base.group_no_one"/>
+    <menuitem
+        id="menu_crm_lead_categ2"
+        name="Tags"
+        action="sales_team.sales_team_crm_tag_action"
+        parent="menu_crm_config_lead2"
+        sequence="1"/>
+    <menuitem
+        id="menu_crm_lost_reason2"
+        name="Lost Reasons"
+        parent="menu_crm_config_lead2"
+        action="crm.crm_lost_reason_action"
+        sequence="6"/>
+
+    <menuitem
+        id="menu_import_crm2"
+        name="Import &amp; Synchronize"
+        parent="crm.crm_menu_root2"/>
+
     </data>
 </odoo>
